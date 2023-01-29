@@ -67,3 +67,19 @@ axuint@localhost ~$ node filename.js
 ```
 
 maka anda akan melihat output seperti diatas
+
+#### JavaScript function
+
+Selanjutnya anda akan belajar tentang `Function`, `Function` atau fungsi adalah bagian dari kode yang dapat digunakan berkali-kali di seluruh kode anda.
+Ini sangat berguna karena anda hanya menulis kode sekali dan anda hanya memanggilnya saja untuk menggunakanya.
+
+``` js
+const name = (name, age) => {
+  return `Nama: ${name}, Umur: ${age}`;
+}
+const user = name("Axuint")
+console.log(user)
+```
+
+`=>` digunakan untuk mendefinisikan sebuah fungsi, yang disebut operator panah.
+segala sesuatu di antara tanda kurung bulat `()` adalah parameter, dipisahkan dengan koma.
