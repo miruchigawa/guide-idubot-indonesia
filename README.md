@@ -2,12 +2,12 @@
 
 **Table of contents**
 - [Basic](#Basic)
-  - [JavaScript membuat variable](#JavaScript-variable)
-  - [JavaScript output](#show-output)
+  - [JavaScript membuat variable](#JavaScript-membuat-variable)
+  - [JavaScript output](#JavaScript-output)
   - [JavaScript function](#JavaScript-function)
   - [JavaScript type](#JavaScript-type)
-- [Membuat sebuah command](#create-a-command)
-  - [Parameter](#parameter)
+- [Membuat sebuah command](#Membuat-sebuah-command)
+  - [Parameter](#Parameter)
 
 ## Pembukaan
 Tutorial ini akan membantumu dalam membuat sebuah command, meskipun anda tidak pernah belajar pemograman.
