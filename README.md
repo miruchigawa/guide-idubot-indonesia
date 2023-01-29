@@ -62,7 +62,7 @@ console.log(age)
 Sekarang ketika Anda menyimpan dan menjalankan kode ini, Buka terminal dan jalankan:
 
 ``` console
-axuint@localhost $ node filename.js
+axuint@localhost ~$ node filename.js
 17
 ```
 
