@@ -1,7 +1,7 @@
 # Tutorial
 
 **Table of contents**
-- [Basic](#Basic)
+- [Dasar](#Dasar)
   - [JavaScript membuat variable](#JavaScript-membuat-variable)
   - [JavaScript output](#JavaScript-output)
   - [JavaScript function](#JavaScript-function)
@@ -9,9 +9,9 @@
 - [Membuat sebuah command](#Membuat-sebuah-command)
   - [Parameter](#Parameter)
 
-## Pembukaan
+## Pendahuluan
 Tutorial ini akan membantumu dalam membuat sebuah command, meskipun anda tidak pernah belajar pemograman.
-Jika kamu sudah mengetahui beberapa hal tentang JavaScript, anda dapat membuka bagian [Membuat sebuah command](#create-a-command).
+Jika kamu sudah mengetahui beberapa hal tentang JavaScript, anda dapat membuka bagian [Membuat sebuah command](#Membuat-sebuah-command).
 
 ## Dasar
 Berikut dasar dasar sebelum anda membuat sebuah command.
@@ -72,14 +72,36 @@ maka anda akan melihat output seperti diatas
 
 Selanjutnya anda akan belajar tentang `Function`, `Function` atau fungsi adalah bagian dari kode yang dapat digunakan berkali-kali di seluruh kode anda.
 Ini sangat berguna karena anda hanya menulis kode sekali dan anda hanya memanggilnya saja untuk menggunakanya.
+Contoh: 
 
 ``` js
-const name = (name, age) => {
+const user = (name, age) => {
   return `Nama: ${name}, Umur: ${age}`;
 }
-const user = name("Axuint", 17)
-console.log(user)
+const data = user("Axuint", 17)
+console.log(data)
 ```
 
 `=>` digunakan untuk mendefinisikan sebuah fungsi, yang disebut operator panah.
 segala sesuatu di antara tanda kurung bulat `()` adalah parameter, dipisahkan dengan koma.
+Parameter adalah sebuah variable yang dapat digunakan dalam sebuah `Function`. Kemudian ada sebuah kurawal `{}` disinilah kode kamu diletakan.
+setelah `Function` selesai disini saya namai `user`
+
+atau anda dapat melakukan:
+``` js
+function user(name, age){
+  return `Nama: ${name}, Age: ${age}`
+}
+const data = user(name, age)
+console.log(data)
+```
+Fungsinya masih sama tetapi disini tidak membutuhkan sebuah operator panah `=>`.
+Lanjut, seperti yang anda lihat, kode ini mengambil parameter `name` dan `age` dan mengaplikasikannya kedalam sebuah string.
+Untuk memanggilnya disini saya membuat sebuah variabe konstanta bernama `data` yang didalamnya `user("Axuint", 17)`. Anda dapat memanggil sebuah `Function` dengan menulis nama function diikuti tanda kurung bulat `()`. Untuk melihat hasilnya disini anda dapat menggunakan `console.log(nama_variable)` atau langsung memanggil sebuah function `console.log(nama_function())`.
+
+#### JavaScript type
+Sejauh ini disini hanya menggunakan sebuah `Number` dan `String`, Tetapi didalam JavaScript memiliki banyak type yang dapat digunakan.
+- String adalah sebuah bagian dari teks yang dapat berisi beberapa karakter. String di definisikan dengan `""` atau `''` atau ``. Contoh:
+``` js
+const string = "Ini adalah sebuah string" // sebuah variable string
+```
