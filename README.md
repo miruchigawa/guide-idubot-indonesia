@@ -130,4 +130,51 @@ const isStudent = true
 ```
 - Jika sesuatu belum didefinisikan maka type nya adalah `undefined`
 ## Membuat sebuah command
-#### Parameter
+#### Membuat command menyapa
+Dibagian ini kita akan membuat sebuah command menyapa user, Untuk membuat command anda harus pergi ke dalam folder command dan buat sebuah file bernama `menyapa.js` extensi `.js` adalah extensi JavaScript. Untuk membuat command menyapa kita memasukan sebuah kode seperti:
+``` js
+export default async function({message, sender}){
+  ... do something
+}
+```
+Jika anda sudah tau fungsi sebuah `Function` maka anda dapat melihat parameter `message` dan `sender`. Parameter `message` berfungsi untuk mengirimkan pesan reply, pesan react. parameter `message` berisi biasanya object seperti:
+``` konsole
+{
+  id: '53DCD5B314458B890297F677B7F2F6EB',
+  type: 'conversation',
+  fromMe: false,
+  text: 'hai',
+  room: '123456789@s.whatsapp.net',
+  quoted: undefined,
+  reacted: null,
+  media: null,
+  list: null,
+  mentions: [],
+  isViewOnce: false,
+  getMessageInfo: [Function: getMessageInfo],
+  reply: [Function: reply],
+  react: [AsyncFunction: react],
+  forward: [AsyncFunction: forward],
+  delete: [Function: delete],
+  waitForReply: [Function: waitForReply],
+  isOffline: false
+}
+```
+Anda dapat menggunakanya untuk mengambil object dalam sebuah pesan seperti `media`, `text`, `room`. dan parameter selanjutnya adalah `sender`, Parameter sender digunakan untuk mengambil data user seperti: nama, id. Dan biasanya `sender` memiliki object:
+``` konsole
+{
+  id: '123456789@s.whatsapp.net',
+  name: 'Axuint',
+  isOwner: true,
+  isAdmin: true,
+  isBot: false,
+  getPP: [Function: getPP]
+}
+```
+Untuk membuat command menyapa maka kita membutuhkan parameter `message` untuk mengirimkan pesan reply dan `sender` untuk mendapatkan username user. Lanjut jika sudah masukan sebuah kode kedalam `menyapa.js`:
+``` js
+export default async function({message, sender}){
+  const username = sender.name // Variable untuk mendapatkan username user
+  return message.reply(`Hallo, ${username}!`) // Mengirimkan pesan reply menyapa
+}
+```
