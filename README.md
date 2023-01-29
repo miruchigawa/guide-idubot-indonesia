@@ -77,7 +77,7 @@ Ini sangat berguna karena anda hanya menulis kode sekali dan anda hanya memanggi
 const name = (name, age) => {
   return `Nama: ${name}, Umur: ${age}`;
 }
-const user = name("Axuint")
+const user = name("Axuint", 17)
 console.log(user)
 ```
 
