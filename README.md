@@ -101,7 +101,33 @@ Untuk memanggilnya disini saya membuat sebuah variabe konstanta bernama `data` y
 
 #### JavaScript type
 Sejauh ini disini hanya menggunakan sebuah `Number` dan `String`, Tetapi didalam JavaScript memiliki banyak type yang dapat digunakan.
-- String adalah sebuah bagian dari teks yang dapat berisi beberapa karakter. String di definisikan dengan `""` atau `''` atau ``. Contoh:
+- String adalah sebuah bagian dari teks yang dapat berisi beberapa karakter. String di definisikan dengan tanda kutip `""` atau `''` atau ``. Contoh:
 ``` js
-const string = "Ini adalah sebuah string" // sebuah variable string
+const string = "Ini adalah sebuah string" // Type string
 ```
+- Array adalah type yang dapat menampung banyak variable di didalamnya. Array didefinisikan dengan tanda kurung siku `[]`. Contoh:
+``` js
+const array = [1, 2, 3, 4, 5] // Type Array
+```
+- Object pada dasarnya adalah array tingkat lanjut. Object didefinisikan dengan tanda kurawal `{}`. Contoh:
+``` js
+const object = {"name": "Axuint", "age": 17} // Type Object
+```
+- Function
+``` js
+const user = (name, age) => { return `Name: ${name}, Age: ${age}` }
+
+// Atau
+
+function user(name, age){
+  return `Name: ${name}, Age: ${age}`
+}
+```
+- Boolean hanya memiliki nilai `true` atau `false`
+``` js
+const isMarry = false
+const isStudent = true
+```
+- Jika sesuatu belum didefinisikan maka type nya adalah `undefined`
+## Membuat sebuah command
+#### Parameter
