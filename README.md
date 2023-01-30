@@ -139,14 +139,23 @@ Dibagian ini kita akan membuat sebuah command menyapa user, Untuk membuat comman
 │   └── menyapa.js
 ```
 
-
-Untuk membuat command menyapa kita memasukan sebuah kode seperti:
+Untuk membuat command kita memasukan sebuah kode seperti
 ``` js
 export default async function({message, sender}){
   ... do something
 }
 ```
-Jika anda sudah tau fungsi sebuah `Function` maka anda dapat melihat parameter `message` dan `sender`. Parameter `message` berfungsi untuk mengirimkan pesan reply, pesan react. parameter `message` berisi biasanya object seperti:
+**Q & A**
+``` txt
+Q: Apa itu export kegunaanya?
+A: export digunakan untuk mengekspor nilai dari module yang mana file ini akan di import kedalam command manager dan akan digunakan jika ada yang menggunakanya
+```
+``` txt
+Q: Apa itu async dan await?
+A: 
+```
+
+Jika anda sudah tau fungsi sebuah `Function` maka anda dapat melihat parameter `message` dan `sender`. Parameter `message` berfungsi untuk mengirimkan pesan reply, pesan react. parameter `message` berisi biasanya object seperti
 ``` konsole
 {
   id: '53DCD5B314458B890297F677B7F2F6EB',
@@ -169,7 +178,7 @@ Jika anda sudah tau fungsi sebuah `Function` maka anda dapat melihat parameter `
   isOffline: false
 }
 ```
-Anda dapat menggunakanya untuk mengambil object dalam sebuah pesan seperti `media`, `text`, `room`. dan parameter selanjutnya adalah `sender`, Parameter sender digunakan untuk mengambil data user seperti: nama, id. Dan biasanya `sender` memiliki object:
+Anda dapat menggunakanya untuk mengambil object dalam sebuah pesan seperti `media`, `text`, `room`. dan parameter selanjutnya adalah `sender`, Parameter sender digunakan untuk mengambil data user seperti username dan id dan biasanya `sender` memiliki object seperti
 ``` konsole
 {
   id: '123456789@s.whatsapp.net',
@@ -180,7 +189,8 @@ Anda dapat menggunakanya untuk mengambil object dalam sebuah pesan seperti `medi
   getPP: [Function: getPP]
 }
 ```
-Untuk membuat command menyapa maka kita membutuhkan parameter `message` untuk mengirimkan pesan reply dan `sender` untuk mendapatkan username user. Lanjut jika sudah masukan sebuah kode kedalam `menyapa.js`:
+Untuk membuat command menyapa maka kita membutuhkan parameter `message` untuk mengirimkan pesan reply dan `sender` untuk mendapatkan username user. 
+Lanjut jika sudah, masukan sebuah kode kedalam `menyapa.js`:
 ``` js
 export default async function({message, sender}){
   const username = sender.name // Variable untuk mendapatkan username user
