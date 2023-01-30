@@ -7,7 +7,7 @@
   - [JavaScript function](#JavaScript-function)
   - [JavaScript type](#JavaScript-type)
 - [Membuat sebuah command](#Membuat-sebuah-command)
-  - [Parameter](#Parameter)
+  - [Membuat command menyapa](#Membuat-command-menyapa)
 
 ## Pendahuluan
 Tutorial ini akan membantumu dalam membuat sebuah command, meskipun anda tidak pernah belajar pemograman.
@@ -101,7 +101,7 @@ Untuk memanggilnya disini saya membuat sebuah variabe konstanta bernama `data` y
 
 #### JavaScript type
 Sejauh ini disini hanya menggunakan sebuah `Number` dan `String`, Tetapi didalam JavaScript memiliki banyak type yang dapat digunakan.
-- String adalah sebuah bagian dari teks yang dapat berisi beberapa karakter. String di definisikan dengan tanda kutip `""` atau `''` atau ``. Contoh:
+- String adalah sebuah bagian dari teks yang dapat berisi beberapa karakter. String di definisikan dengan tanda kutip `""` atau `''` atau ` `` `. Contoh:
 ``` js
 const string = "Ini adalah sebuah string" // Type string
 ```
@@ -131,7 +131,14 @@ const isStudent = true
 - Jika sesuatu belum didefinisikan maka type nya adalah `undefined`
 ## Membuat sebuah command
 #### Membuat command menyapa
-Dibagian ini kita akan membuat sebuah command menyapa user, Untuk membuat command anda harus pergi ke dalam folder command dan buat sebuah file bernama `menyapa.js` extensi `.js` adalah extensi JavaScript. Untuk membuat command menyapa kita memasukan sebuah kode seperti:
+Dibagian ini kita akan membuat sebuah command menyapa user, Untuk membuat command anda harus pergi ke dalam folder `commands` dan buat sebuah file bernama `menyapa.js` seperti ini:
+```
+├── commands 
+│   └── menyapa.js
+```
+
+
+Untuk membuat command menyapa kita memasukan sebuah kode seperti:
 ``` js
 export default async function({message, sender}){
   ... do something
