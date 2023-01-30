@@ -8,6 +8,8 @@
   - [JavaScript type](#JavaScript-type)
 - [Membuat sebuah command](#Membuat-sebuah-command)
   - [Membuat command menyapa](#Membuat-command-menyapa)
+- [Penutup](#Penutup)
+  - [Penulis](#Penulis)
 
 ## Pendahuluan
 Tutorial ini akan membantumu dalam membuat sebuah command, meskipun anda tidak pernah belajar pemograman.
@@ -185,3 +187,8 @@ export default async function({message, sender}){
   return message.reply(`Hallo, ${username}!`) // Mengirimkan pesan reply menyapa
 }
 ```
+
+### Penutup
+Terimakasih kepada para `contributor` dan teman teman semua yang sudah membaca tutorial ini semoga bermanfaat.
+#### Penulis
+- [Miftah Fauzan (Axuint)](https://miftahfauzan.netlify.app)
