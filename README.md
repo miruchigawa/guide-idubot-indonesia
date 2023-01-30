@@ -15,6 +15,10 @@
 Tutorial ini akan membantumu dalam membuat sebuah command, meskipun anda tidak pernah belajar pemograman.
 Jika kamu sudah mengetahui beberapa hal tentang JavaScript, anda dapat membuka bagian [Membuat sebuah command](#Membuat-sebuah-command).
 
+> **Warning**
+> 
+> Package ini dalam tahap pembaruan mungkin terdapat kata yang belum lengkap
+
 ## Dasar
 Berikut dasar dasar sebelum anda membuat sebuah command.
 
